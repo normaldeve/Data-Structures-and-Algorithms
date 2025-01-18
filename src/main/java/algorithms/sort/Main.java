@@ -40,7 +40,7 @@ public class Main {
 
     private static void insertSortTime() {
         long startTime = System.currentTimeMillis();
-        InsertSort.insertSort(arr, n);
+        InsertSort.sort(arr, n);
         long endTime = System.currentTimeMillis();
         System.out.println("삽입 정렬 시 걸리는 시간: " + (endTime - startTime) + "ms");
     }

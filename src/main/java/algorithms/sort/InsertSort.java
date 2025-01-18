@@ -1,7 +1,7 @@
 package algorithms.sort;
 
 public class InsertSort {
-    public static void insertSort(int[] arr, int n) {
+    public static void sort(int[] arr, int n) {
         for (int i = 1; i < n; i++) {
             int j = i - 1;
             int key = arr[i];
