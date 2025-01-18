@@ -1,8 +1,10 @@
 package datastructures.list.array;
 
+import datastructures.list.MyList;
+
 import java.util.Arrays;
 
-public class MyArrayList<E> {
+public class MyArrayList<E> implements MyList<E> {
     private static final int DEFAULT_CAPACITY = 10;
 
     private Object[] elementData;
@@ -16,10 +18,12 @@ public class MyArrayList<E> {
         elementData = new Object[initialCapacity];
     }
 
+    @Override
     public int size() {
         return size;
     }
 
+    @Override
     public void add(E e) {
         if (size == elementData.length) {
             grow();
@@ -28,6 +32,7 @@ public class MyArrayList<E> {
         size++;
     }
 
+    @Override
     public void add(int index, E e) {
         if (size == elementData.length) {
             grow();
@@ -49,6 +54,7 @@ public class MyArrayList<E> {
         }
     }
 
+    @Override
     public E get(int index) {
         return (E) elementData[index];
     }
@@ -59,6 +65,7 @@ public class MyArrayList<E> {
         return oldValue;
     }
 
+    @Override
     public E remove(int index) {
         E oldValue = get(index);
         shiftLeftFrom(index);
@@ -68,6 +75,7 @@ public class MyArrayList<E> {
         return oldValue;
     }
 
+    @Override
     public int indexOf(E e) {
         for (int i = 0; i < size; i++) {
             if (e.equals(elementData[i])) {
