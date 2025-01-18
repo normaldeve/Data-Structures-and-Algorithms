@@ -1,18 +1,18 @@
-package datastructures.list;
+package datastructures.list.array;
 
 import java.util.Arrays;
 
-public class MyList<E> {
+public class MyArrayList<E> {
     private static final int DEFAULT_CAPACITY = 10;
 
     private Object[] elementData;
     private int size = 0;
 
-    public MyList() {
+    public MyArrayList() {
         elementData = new Object[DEFAULT_CAPACITY];
     }
 
-    public MyList(int initialCapacity) {
+    public MyArrayList(int initialCapacity) {
         elementData = new Object[initialCapacity];
     }
 

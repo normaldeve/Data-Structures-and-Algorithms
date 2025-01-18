@@ -1,8 +1,8 @@
-package datastructures.list;
+package datastructures.list.array;
 
-public class MyListMain {
+public class MyArrayListMain {
     public static void main(String[] args) {
-        MyList<String> stringList = new MyList<>();
+        MyArrayList<String> stringList = new MyArrayList<>();
         System.out.println("<List 데이터 추가>");
         stringList.add("A");
         System.out.println("stringList = " + stringList);
