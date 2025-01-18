@@ -56,3 +56,10 @@ Java에서는 리스트 자료구조를 JCF(Java Collections Framework)의 `List
 ---
 
 `List` 인터페이스와 구현체를 활용하면 배열의 고정 크기 문제를 해결하고, 동적 크기와 순서가 있는 데이터를 효율적으로 관리할 수 있습니다.
+
+<img width="312" alt="스크린샷 2025-01-19 오전 12 03 27" src="https://github.com/user-attachments/assets/d4e15b9c-2977-4056-9586-722ca4b30533" />
+<img width="328" alt="스크린샷 2025-01-19 오전 12 03 51" src="https://github.com/user-attachments/assets/acfe9d82-2298-4863-9c2c-4cdf17ac10d1" />
+
+실제로 내가 구현한 ArrayList와 JCF에서 구현한 ArrayList의 성능 차이를 두 눈으로 확인해보니 얼마나 최적화가 잘되어 있는지 알 수 있었다
+데이터를 맨 앞에서 계속해서 추가하는 작업을 제외한다면 ArrayList를 사용하는 것이 좋을 듯 하다.
+
