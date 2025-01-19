@@ -1,6 +1,6 @@
 package algorithms.sort;
 
-public class InsertSort {
+public class InsertionSort {
     public static void sort(int[] arr, int n) {
         for (int i = 1; i < n; i++) {
             int j = i - 1;
