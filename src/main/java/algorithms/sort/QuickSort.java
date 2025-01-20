@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class QuickSort {
     public static int n;
     public static int[] arr = new int[10_000];
-    public static int[] mergedArr = new int[10_000];
     public static int partition(int low, int high) { // pivot의 최종 위치를 알려준다.
         int pivot = arr[high];
         int i = low - 1;
