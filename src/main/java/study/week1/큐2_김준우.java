@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/18258
-public class P18258 {
+public class 큐2_김준우 {
     public static int n;
     public static String cmd;
     public static Queue<Integer> queue = new LinkedList<>();

@@ -37,7 +37,8 @@ public class P1158  {
             }
         }
         bw.write(">");
-        bw.flush();
+
+        br.close();
         bw.close();
     }
 }
